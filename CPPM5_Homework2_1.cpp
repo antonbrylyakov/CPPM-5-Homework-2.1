@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 
 enum class Month
 {
@@ -21,40 +21,40 @@ void printMonth(Month month)
 	switch (month)
 	{
 	case Month::Junuary:
-		std::cout << "ßíâàðü";
+		std::cout << "Ð¯Ð½Ð²Ð°Ñ€ÑŒ";
 		break;
 	case Month::February:
-		std::cout << "Ôåâðàëü";
+		std::cout << "Ð¤ÐµÐ²Ñ€Ð°Ð»ÑŒ";
 		break;
 	case Month::March:
-		std::cout << "Ìàðò";
+		std::cout << "ÐœÐ°Ñ€Ñ‚";
 		break;
 	case Month::April:
-		std::cout << "Àïðåëü";
+		std::cout << "ÐÐ¿Ñ€ÐµÐ»ÑŒ";
 		break;
 	case Month::May:
-		std::cout << "Ìàé";
+		std::cout << "ÐœÐ°Ð¹";
 		break;
 	case Month::June:
-		std::cout << "Èþíü";
+		std::cout << "Ð˜ÑŽÐ½ÑŒ";
 		break;
 	case Month::July:
-		std::cout << "Èþëü";
+		std::cout << "Ð˜ÑŽÐ»ÑŒ";
 		break;
 	case Month::August:
-		std::cout << "Àâãóñò";
+		std::cout << "ÐÐ²Ð³ÑƒÑÑ‚";
 		break;
 	case Month::September:
-		std::cout << "Ñåíòÿáðü";
+		std::cout << "Ð¡ÐµÐ½Ñ‚ÑÐ±Ñ€ÑŒ";
 		break;
 	case Month::October:
-		std::cout << "Îêòÿáðü";
+		std::cout << "ÐžÐºÑ‚ÑÐ±Ñ€ÑŒ";
 		break;
 	case Month::November:
-		std::cout << "Íîÿáðü";
+		std::cout << "ÐÐ¾ÑÐ±Ñ€ÑŒ";
 		break;
 	case Month::December:
-		std::cout << "Äåêàáðü";
+		std::cout << "Ð”ÐµÐºÐ°Ð±Ñ€ÑŒ";
 		break;
 	default:
 		break;
@@ -69,7 +69,7 @@ int main()
 	setlocale(LC_ALL, "Russian");
 	do
 	{
-		std::cout << "Ââåäèòå íîìåð ìåñÿöà: ";
+		std::cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ Ð½Ð¾Ð¼ÐµÑ€ Ð¼ÐµÑÑÑ†Ð°: ";
 		std::cin >> monthNum;
 
 		if (monthNum >= 1 && monthNum <= 12)
@@ -78,9 +78,9 @@ int main()
 		}
 		else if (monthNum != 0)
 		{
-			std::cout << "Íåïðàâèëüíûé íîìåð!" << std::endl;
+			std::cout << "ÐÐµÐ¿Ñ€Ð°Ð²Ð¸Ð»ÑŒÐ½Ñ‹Ð¹ Ð½Ð¾Ð¼ÐµÑ€!" << std::endl;
 		}
 	} while (monthNum != 0);
 
-	std::cout << "Äî ñâèäàíèÿ" << std::endl;
+	std::cout << "Ð”Ð¾ ÑÐ²Ð¸Ð´Ð°Ð½Ð¸Ñ" << std::endl;
 }
